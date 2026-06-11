@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vigenere Cipher</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -11,25 +12,23 @@
     </header>
     <main>
         <h3>Message to be encrypted</h3>
-        <input type="text" id="p" placeholder="Type...">
-        <br>
+        <input type="text" id="p" maxlength="87" placeholder="Type...">
         <h3>Encryption key</h3>
-        <input type="text" id="k" placeholder="Type...">
-        <p></p>
+        <input type="text" id="k" maxlength="87" placeholder="Type..."><br>
         <button id="encrypt">Encrypt</button>
-        <h3 id="encryptedText" class="results"></h3>
+        <h2 id="encryptedText"></h2>
         <h3>Message to be decrypted</h3>
-        <input type="text" id="c" placeholder="Type...">
-        <br>
+        <input type="text" id="c" maxlength="87" placeholder="Type...">
         <h3>Decryption key</h3>
-        <input type="text" id="k1" placeholder="Type...">
-        <p></p>
+        <input type="text" id="k1" maxlength="87" placeholder="Type..."><br>
         <button id="decrypt">Decrypt</button>
-        <h3 id="decryptedText" class="results"></h3>
+        <div><h2 id="decryptedText"></h2>
 
     </main>
 
-
+    <footer>
+        <p>&copy; 2026 Código fonte de thxmichael</p>
+    </footer>
     <script src="vigenere.js"></script>
 </body>
 </html>
